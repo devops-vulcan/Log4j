@@ -21,6 +21,12 @@ jobs:
         with:
           java-version: '11'
 
+      - name: Set up Gradle
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'gradle'
+          version: '6.8.3'  # Specify the required Gradle version
+
       - name: Build with Gradle
         run: ./gradlew build
 
