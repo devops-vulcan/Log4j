@@ -37,7 +37,7 @@ jobs:
           ARTIFACTORY_URL: ${{ secrets.JF_URL }}
           ARTIFACTORY_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
         run: |
-          ./gradlew publish -Purl=${{ secrets.JF_URL }}/your-repo -PapiKey=${{ secrets.JF_ACCESS_TOKEN  }}
+          ./gradlew publish -Purl=${{ secrets.JF_URL }}/Log4j -PapiKey=${{ secrets.JF_ACCESS_TOKEN  }}
 
 
 
