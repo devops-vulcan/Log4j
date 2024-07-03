@@ -27,7 +27,7 @@ jobs:
         with:
           distribution: gradle
           java-version: 11  # Specify the Java version to use with Gradle
-          gradle-version: 6.8.3
+          gradle-version: 7.3.1
 
       - name: Build with Gradle
         run: ./gradlew build
